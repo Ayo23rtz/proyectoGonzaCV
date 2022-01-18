@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --dark: rgb(0, 52, 110);
+    --ligth: rgb(232, 234, 237);
+    --letter-head: rgb(245, 245, 245);
+    --letter-main: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--ligth);
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+main {
+    margin: 10px;
+    color: var(--letter-main);
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-area: auto;
+
+}
+
+header {
+    margin: 10px;
+    display: grid;
+    gap: 3px;
+    font-size: 17px;
+    background: linear-gradient(var(--dark), var(--ligth));
+    border-radius: 6px;
+}
+
+.header2 section {
+    background-size: 5em;
+    border-radius: 6px 6px 1px;
+    border: 2px solid rgba(211, 211, 211, .1);
+    color: var(--letter-head);
+    background-color: rgba(211, 211, 211, .3);
+    margin: 5px;
+    padding: 3px;
+}
+
+header section h3 {
+    margin: 15px;
+}
+
+#header .foto {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--letter-head);
+    text-align: center;
+    
+    
+}
+
+.foto img {
+    width: 12em;
+    border-radius: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    
+}
+
+/* img:hover {
+    width: 15em;
+    background: #eee;
+    background-attachment: scroll;
+    box-shadow: 0 0 .7rem whitesmoke;
+    transform: rotate(360deg) translateY(-.25rem);
+} */
+
+img:hover {
+    animation: glow .5s alternate infinite;
+
+}
+
+.web-designer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.web-designer ul {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.perfil,
+.cursos,
+.formacion {
+    font-family: 'Noto Sans', sans-serif;
+    border-radius: 0 5px 0;
+    border-bottom: 2px solid lightgrey;
+    padding: 20px;
+    background-color: var(--letter-head);
+}
+
+.datos-personales ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--letter-head);
+    line-height: 1.5;
+    justify-content: start;
+}
+
+a:hover {
+    text-shadow: var(--letter-main) 0 2px;
+    
+  }
+
+.datos-personales ul {
+    font-size: 20px;
+}
+
+.datos-personales ul:hover {
+    text-shadow: 2px lightgrey;
+}
+
+.datos-personales span {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 10px;
+    font-size: 17px;
+
+}
+
+.datos-personales ul {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.idiomas ul {
+    padding-left: 20px;
+}
+
+.intereses ul {
+    padding-left: 20px;
+}
+
